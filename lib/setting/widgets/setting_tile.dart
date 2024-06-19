@@ -20,15 +20,20 @@ class SettingTile extends StatefulWidget {
 }
 
 class _SettingTileState extends State<SettingTile> {
-
-  List<String> languages = ['English', 'Bahasa Indonesia', 'Français', 'Japanese', 'German'];
+  List<String> languages = [
+    'English',
+    'Bahasa Indonesia',
+    'Français',
+    'Japanese',
+    'German'
+  ];
   late String selectedLanguage;
   late String tempSelectedLanguage;
 
   @override
   void initState() {
     super.initState();
-    loadLanguage(); 
+    loadLanguage();
   }
 
   Future<void> loadLanguage() async {
@@ -55,8 +60,11 @@ class _SettingTileState extends State<SettingTile> {
             context: context,
             builder: (BuildContext context) {
               return AlertDialog(
-                title: Text('Help'),
-                content: Text('You are going to be forwarded to customer service. Click confirm if you need help.'),
+                title: Text(
+                  'Help',
+                  ),
+                content: Text(
+                    'You are going to be forwarded to customer service. Click confirm if you need help.'),
                 actions: <Widget>[
                   TextButton(
                     onPressed: () {
@@ -80,7 +88,8 @@ class _SettingTileState extends State<SettingTile> {
             builder: (BuildContext context) {
               return AlertDialog(
                 title: Text('Log-Out'),
-                content: Text('Are you sure you want to log-out from your account?'),
+                content:
+                    Text('Are you sure you want to log-out from your account?'),
                 actions: <Widget>[
                   TextButton(
                     onPressed: () {
@@ -91,7 +100,8 @@ class _SettingTileState extends State<SettingTile> {
                   TextButton(
                     onPressed: () {
                       Navigator.of(context).pop();
-                      final authService = Provider.of<AuthService>(context, listen: false);
+                      final authService =
+                          Provider.of<AuthService>(context, listen: false);
                       authService.signOut();
                       Navigator.pushNamed(context, '/logout');
                     },
@@ -107,7 +117,7 @@ class _SettingTileState extends State<SettingTile> {
             builder: (BuildContext context) {
               return AlertDialog(
                 title: Text('Sync'),
-                content: Text('Sync your massage?'),
+                content: Text('Sync your message?'),
                 actions: <Widget>[
                   TextButton(
                     onPressed: () {
@@ -184,7 +194,8 @@ class _SettingTileState extends State<SettingTile> {
                       });
                     }
                   },
-                  items: languages.map<DropdownMenuItem<String>>((String value) {
+                  items:
+                      languages.map<DropdownMenuItem<String>>((String value) {
                     return DropdownMenuItem<String>(
                       value: value,
                       child: Text(value),

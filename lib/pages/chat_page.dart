@@ -144,9 +144,12 @@ class _ChatPageState extends State<ChatPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.orange[900],
+        backgroundColor: const Color.fromARGB(255, 57, 56, 56),
         leading: IconButton(
-          icon: Icon(Icons.arrow_back),
+          icon: Icon(
+            Icons.arrow_back,
+            color: Colors.white,
+          ),
           onPressed: () {
             Navigator.of(context).pop();
           },
@@ -161,7 +164,8 @@ class _ChatPageState extends State<ChatPage> {
               ),
             ),
             const SizedBox(width: 8),
-            Text(widget.receiverUserEmail),
+            Text(widget.receiverUserEmail,
+                style: TextStyle(color: Colors.white)),
           ],
         ),
       ),

@@ -16,7 +16,7 @@ class MyTextField extends StatelessWidget {
     return TextField(
       controller: controller,
       obscureText: obscureText,
-      style: TextStyle(color: Colors.white),
+      style: TextStyle(color: Color.fromARGB(255, 46, 46, 46)),
       decoration: InputDecoration(
         enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.all(Radius.circular(15)),
