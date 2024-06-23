@@ -174,7 +174,7 @@ class _profilesettingState extends State<profilesetting> {
       debugShowCheckedModeBanner: false,
       home: Scaffold(
         appBar: AppBar(
-          backgroundColor: Colors.orange[900],
+          backgroundColor: const Color.fromARGB(255, 254, 254, 254),
           title: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
           ),
@@ -186,9 +186,9 @@ class _profilesettingState extends State<profilesetting> {
               gradient: LinearGradient(
                 begin: Alignment.topCenter,
                 colors: [
-                  Colors.orange[900]!,
-                  Colors.orange[800]!,
-                  Colors.orange[400]!,
+                  const Color.fromARGB(255, 57, 57, 57)!,
+                  const Color.fromARGB(255, 28, 28, 28)!,
+                  const Color.fromARGB(255, 0, 0, 0)!,
                 ],
               ),
             ),
@@ -237,7 +237,7 @@ class _profilesettingState extends State<profilesetting> {
                           color: Color.fromARGB(255, 255, 255, 255),
                           boxShadow: [
                             BoxShadow(
-                              color: Color.fromRGBO(225, 95, 27, .3),
+                              color: Color.fromRGBO(0, 0, 0, 0.298),
                               blurRadius: 20,
                               offset: Offset(0, 10),
                             ),
@@ -269,7 +269,8 @@ class _profilesettingState extends State<profilesetting> {
                           String username = usernameController.text;
                           print(username);
 
-                          editUserDataField('username', usernameController.text);
+                          editUserDataField(
+                              'username', usernameController.text);
                           print('sudah');
 
                           getField('pfpurl');
@@ -286,10 +287,10 @@ class _profilesettingState extends State<profilesetting> {
                               bottomLeft: Radius.circular(20),
                               bottomRight: Radius.circular(20),
                             ),
-                            color: Color.fromARGB(255, 230, 81, 0),
+                            color: Color.fromARGB(255, 254, 254, 254),
                             boxShadow: [
                               BoxShadow(
-                                color: Color.fromRGBO(247, 86, 0, 0.298),
+                                color: Color.fromRGBO(0, 0, 0, 0.294),
                                 blurRadius: 10,
                                 offset: Offset(0, 10),
                               ),
@@ -301,7 +302,7 @@ class _profilesettingState extends State<profilesetting> {
                           child: const Text(
                             'Apply',
                             style: TextStyle(
-                              color: Colors.white,
+                              color: Color.fromARGB(255, 0, 0, 0),
                               fontSize: 20,
                               fontWeight: FontWeight.bold,
                             ),
