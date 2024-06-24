@@ -1,6 +1,3 @@
-import 'package:chat_app/components/button.dart';
-import 'package:chat_app/components/text_field.dart';
-import 'package:chat_app/pages/profilesetting.dart';
 import 'package:chat_app/services/auth/auth_service.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -79,7 +76,7 @@ class _RegisterPageState extends State<RegisterPage> {
                     Align(
                       alignment: Alignment.center,
                       child: Image.asset(
-                        'lib/setting/assets/splash_logo.png',
+                        'lib/setting/assets/logo.png',
                         height: 150,
                         width: 150,
                       ),

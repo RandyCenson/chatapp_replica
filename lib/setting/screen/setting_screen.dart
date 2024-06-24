@@ -1,16 +1,10 @@
-import 'dart:io';
-
 import 'package:chat_app/services/image_service.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_storage/firebase_storage.dart';
 import 'package:flutter/material.dart';
-import 'package:chat_app/constants.dart';
 import 'package:chat_app/setting/models/setting.dart';
 import 'package:chat_app/setting/widgets/avatar_card.dart';
 import 'package:chat_app/setting/widgets/setting_tile.dart';
 import 'package:chat_app/setting/widgets/motto_card.dart';
-import 'package:image_picker/image_picker.dart';
-import 'package:flutter/cupertino.dart';
 
 class SettingsScreen extends StatefulWidget {
   const SettingsScreen({super.key});

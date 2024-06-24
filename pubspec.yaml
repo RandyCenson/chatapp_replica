@@ -45,11 +45,11 @@ dependencies:
   swipe_to: ^1.0.2
   flutter_native_splash: ^2.4.0
 
-flutter_native_splash:
-  # color: "#FFFFFF"
-  background_image: "#FFFFFF"
-  image: "lib/setting/assets/splash_logo.png"
-  android: true
+# flutter_native_splash:
+#   # color: "#FFFFFF"
+#   background_image: "#FFFFFF"
+#   image: "lib/setting/assets/splash_logo.png"
+#   android: true
 
 dev_dependencies:
   flutter_test:

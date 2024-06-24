@@ -1,5 +1,3 @@
-import 'package:chat_app/components/button.dart';
-import 'package:chat_app/components/text_field.dart';
 import 'package:chat_app/pages/home_page.dart';
 import 'package:chat_app/services/auth/auth_service.dart';
 import 'package:flutter/material.dart';
@@ -77,7 +75,7 @@ class _LoginPageState extends State<LoginPage> {
                     Align(
                       alignment: Alignment.center,
                       child: Image.asset(
-                        'lib/setting/assets/splash_logo.png',
+                        'lib/setting/assets/logo.png',
                         height: 150,
                         width: 150,
                       ),

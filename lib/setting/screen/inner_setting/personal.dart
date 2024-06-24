@@ -1,11 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:chat_app/constants.dart';
 import 'package:chat_app/setting/models/setting.dart';
 import 'package:chat_app/setting/widgets/avatar_card.dart';
 import 'package:chat_app/setting/widgets/setting_tile.dart';
-import 'package:chat_app/setting/widgets/motto_card.dart';
 
 class PersonalData extends StatefulWidget {
   const PersonalData({super.key});

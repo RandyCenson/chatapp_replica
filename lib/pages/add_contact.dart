@@ -3,7 +3,6 @@ import 'package:chat_app/pages/home_page.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:chat_app/components/button.dart';
 
 class AddContact extends StatefulWidget {
   const AddContact({super.key});
