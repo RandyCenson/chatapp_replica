@@ -42,7 +42,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
         ),
       ),
       body: Padding(
-        padding: const EdgeInsets.symmetric(vertical: 25, horizontal: 20),
+        padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 20),
         child: Center(
           child: SingleChildScrollView(
             child: Column(
@@ -50,7 +50,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 AvatarCard(useremail: user?.email ?? 'empty'),
-                const SizedBox(height: 20),
+                const SizedBox(height: 10),
                 const Divider(),
                 const SizedBox(height: 10),
                 Column(
@@ -68,7 +68,7 @@ class _SettingsScreenState extends State<SettingsScreen> {
                     (index) => SettingTile(setting: settings2[index]),
                   ),
                 ),
-                const SizedBox(height: 20),
+                const SizedBox(height: 110),
                 const MottoCard()
               ],
             ),

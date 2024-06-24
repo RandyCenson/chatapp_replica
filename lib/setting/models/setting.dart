@@ -29,25 +29,10 @@ final List<Setting> settings = [
     icon: CupertinoIcons.bell_solid,
   ),
   Setting(
-    title: "Data Usage",
-    route: "/",
-    routes: "/datausage",
-    icon: Icons.sync_alt,
-  ),
-  Setting(
     title: "Language",
     route: "/",
     routes: "/lang",
     icon: Icons.language,
-  ),
-];
-
-final List<Setting> settings2 = [
-  Setting(
-    title: "Sync",
-    route: "/",
-    routes: "/sync",
-    icon: Icons.sync,
   ),
   Setting(
     title: "Help",
@@ -55,6 +40,9 @@ final List<Setting> settings2 = [
     routes: "/personal",
     icon: Icons.help,
   ),
+];
+
+final List<Setting> settings2 = [
   Setting(
     title: "Log-Out",
     route: "/",
